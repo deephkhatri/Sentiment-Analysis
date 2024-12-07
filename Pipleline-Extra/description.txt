@@ -1,1 +1,0 @@
-The pipeline.py script provides an interactive sentiment analysis pipeline where users can input custom text and receive real-time sentiment scores. The script uses the Hugging Face pipeline API for sentiment analysis, making it efficient and user-friendly.
