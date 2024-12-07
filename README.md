@@ -43,6 +43,7 @@ This repository contains a comprehensive pipeline for analyzing and visualizing 
   - Creates visualizations for VADER and RoBERTa sentiment scores.
 - **`vaders_with_sentiment.csv`**: Output after VADER sentiment analysis.
 - **`roberta_with_sentiment.csv`**: Output after RoBERTa sentiment analysis.
+- **`requirements.txt`**: Lists of all the Python libraries and dependencies required to run your project.
 
 ### 3. Pipleline-EXTRA
 - **`pipeline.py`**: 
