@@ -26,27 +26,27 @@ This repository contains a comprehensive pipeline for analyzing and visualizing 
 
 ## File Structure
 
-### 1. Datasets
+### 1. TextAnalysis
 - **`read.txt`**: The raw text file for initial analysis.
 - **`emotions.txt`**: A mapping file to associate words with emotions.
-- **`vaders_with_sentiment.csv`**: Output after VADER sentiment analysis.
-- **`roberta_with_sentiment.csv`**: Output after RoBERTa sentiment analysis.
-- **`kaggle_dataset.csv`**: Additional dataset for comparative analysis.
-
-### 2. Scripts
-- **`text_analysis.py`**: 
+- **`textimport.py`**:
   - Performs basic text cleaning, tokenization, and emotion extraction.
   - Generates a bar graph of emotions.
+- **`graph.png`**: Emotion-based visualization from text analysis.
+
+### 2. VADER-and-RoBERTa
+- **`main.py`**: 
+  - Uses VADERS to perform Ruled Based sentiment analysis on the dataset.
 - **`robertatransformer.py`**: 
-  - Uses RoBERTa to perform sentiment analysis on a dataset.
+  - Uses RoBERTa to perform sentiment analysis on `vaders_with_sentiment.csv` dataset.
 - **`visualize1.py` and `visualize2.py`**: 
   - Creates visualizations for VADER and RoBERTa sentiment scores.
+- **`vaders_with_sentiment.csv`**: Output after VADER sentiment analysis.
+- **`roberta_with_sentiment.csv`**: Output after RoBERTa sentiment analysis.
+
+### 3. Pipleline-EXTRA
 - **`pipeline.py`**: 
   - An interactive pipeline to input custom text and get sentiment results.
-
-### 3. Outputs
-- **`graph.png`**: Emotion-based visualization from text analysis.
-- **`other_visualizations/`**: Stores visualizations from the `visualize` scripts.
 
 ---
 
